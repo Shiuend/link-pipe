@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">LinkPipe</string>
+    <string name="default_web_client_id" translatable="false">353639865597-ktepbl6uj3mduki8oi66jofs4bqvfjr4.apps.googleusercontent.com</string>
+    <string name="sign_in_tagline">Save the links you want to read later.</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="bookmarks_title">Bookmarks</string>
+    <string name="settings_title">Settings</string>
+    <string name="no_saved_links">No saved links yet</string>
+    <string name="bookmark_detail_title">Bookmark details</string>
+    <string name="back">Back</string>
+    <string name="open_link">Open link</string>
+    <string name="delete">Delete</string>
+    <string name="bookmark_not_found">Bookmark not found</string>
+    <string name="add_note">Add a note</string>
+    <string name="note">Note</string>
+    <string name="source_format">Source: %1$s</string>
+    <string name="unknown">Unknown</string>
+    <string name="created_at_format">Created: %1$s</string>
+    <string name="date_unavailable">—</string>
+    <string name="syncing">Syncing…</string>
+    <string name="mark_unread">Mark as unread</string>
+    <string name="mark_read">Mark as read</string>
+    <string name="delete_bookmark_title">Delete bookmark?</string>
+    <string name="delete_bookmark_message">This bookmark will be hidden from the list.</string>
+    <string name="cancel">Cancel</string>
+    <string name="google_account">Google Account</string>
+    <string name="quick_save_title">Quick save after sharing</string>
+    <string name="quick_save_description">Save with a translucent progress screen, then close automatically</string>
+    <string name="open_detail_title">Open details after sharing</string>
+    <string name="open_detail_description">Show bookmark details immediately after saving a shared link</string>
+    <string name="sign_out">Sign out</string>
+    <string name="saving_link">Saving link…</string>
+    <string name="saved">Saved</string>
+    <string name="close">Close</string>
+    <string name="firebase_client_id_missing">Set the Firebase Web client ID first</string>
+    <string name="sign_in_failed">Sign-in failed. Try again.</string>
+    <string name="shared_url_not_found">No valid URL was found in the shared content</string>
+    <string name="link_saved">Link saved</string>
+    <string name="save_link_failed">Unable to save link</string>
+    <string name="not_signed_in">Not signed in</string>
+    <string name="operation_failed">Operation failed</string>
+    <string name="browser_not_found">No browser is available to open this URL</string>
+</resources>

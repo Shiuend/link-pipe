@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "LinkPipe",
+  "version": "1.0.2",
+  "description": "Save links to your shared LinkPipe bookmark list.",
+  "action": {
+    "default_title": "LinkPipe",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["activeTab", "contextMenus", "identity"],
+  "oauth2": {
+    "client_id": "__GOOGLE_OAUTH_CLIENT_ID__",
+    "scopes": ["openid", "email", "profile"]
+  }
+}

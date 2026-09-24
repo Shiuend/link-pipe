@@ -1,0 +1,23 @@
+{
+  "name": "@linkpipe/firestore-demo",
+  "version": "1.0.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js",
+    "test": "node --import tsx --test test/**/*.test.ts",
+    "check": "npm run test && npm run build"
+  },
+  "dependencies": {
+    "firebase-admin": "^14.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

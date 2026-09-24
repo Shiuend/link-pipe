@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>LinkPipe</title><link rel="stylesheet" href="styles.css"></head>
+  <body class="popup">
+    <header><div><span class="eyebrow">LINKPIPE</span><h1>儲存連結</h1></div><button id="open-library" class="quiet" type="button">查看書籤</button></header>
+    <div class="account"><span id="auth-label">載入中…</span><button id="sign-in" class="text-button" type="button">Google 登入</button></div>
+    <form id="capture-form">
+      <input id="source" name="source" type="hidden" value="current-page">
+      <label for="url">網址</label><input id="url" name="url" type="url" required placeholder="https://example.com">
+      <div class="button-row"><button id="use-current" class="quiet" type="button">使用目前頁面</button><button id="use-manual" class="quiet" type="button">手動輸入</button></div>
+      <label for="note">備註</label><textarea id="note" name="note" rows="4" placeholder="稍後閱讀的原因或重點"></textarea>
+      <button id="save" class="primary" type="submit">儲存</button>
+    </form>
+    <p id="message" class="message" aria-live="polite"></p>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

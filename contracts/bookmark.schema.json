@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkpipe.local/contracts/bookmark.schema.json",
+  "title": "LinkPipe bookmark",
+  "description": "Cross-client fields stored at /users/{uid}/bookmarks/{urlHash}.",
+  "type": "object",
+  "required": ["url", "urlHash", "status", "hidden"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1, "default": 1 },
+    "id": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+    "urlHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "note": { "type": "string", "default": "" },
+    "source": { "type": "string", "default": "" },
+    "status": { "type": "string", "enum": ["unread", "read"] },
+    "createdBy": { "type": "string", "enum": ["android", "chrome-extension", "node-demo"] },
+    "lastSharedBy": { "type": "string", "enum": ["android", "chrome-extension", "node-demo"] },
+    "createdAt": { "$ref": "#/$defs/firestoreTimestamp" },
+    "updatedAt": { "$ref": "#/$defs/firestoreTimestamp" },
+    "hidden": { "type": "boolean" }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "firestoreTimestamp": {
+      "description": "A Firestore Timestamp supplied by an SDK or server transform."
+    }
+  }
+}

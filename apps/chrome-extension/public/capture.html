@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>儲存連結 · LinkPipe</title><link rel="stylesheet" href="styles.css"></head>
+  <body class="popup">
+    <header><div><span class="eyebrow">LINKPIPE</span><h1>儲存頁面連結</h1></div></header>
+    <div class="account"><span id="auth-label">載入中…</span><button id="sign-in" class="text-button" type="button">Google 登入</button></div>
+    <form id="capture-form">
+      <input id="source" name="source" type="hidden" value="page-link">
+      <label for="url">網址</label><input id="url" name="url" type="url" required>
+      <label for="note">備註</label><textarea id="note" name="note" rows="5" placeholder="稍後閱讀的原因或重點"></textarea>
+      <button id="save" class="primary" type="submit">儲存</button>
+    </form>
+    <p id="message" class="message" aria-live="polite"></p>
+    <script type="module" src="capture.js"></script>
+  </body>
+</html>

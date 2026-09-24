@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "raw": "HTTPS://Example.COM:443/Path/?z=1&a=2#part",
+      "normalized": "https://example.com/Path?a=2&z=1",
+      "sha256": "c4cac3cbfc0c6e2615d4ab49f9ed4f1cfd9897f0c06d850436a50586469db7d7"
+    },
+    {
+      "raw": " https://example.com/article ",
+      "normalized": "https://example.com/article",
+      "sha256": "632538290468e7a39c06323c9e3ae98f31072d641cbb37ea37917f56bbeb5539"
+    }
+  ]
+}
